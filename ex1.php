@@ -45,8 +45,36 @@ numberOfParagraphs($longParagraph);
 
 echo "<br>";
 
-function countValues($key ,$value){
-    return count($value);
+function longestWord($sentence){
+    $splitWords = explode(' ', $sentence);
+
+    $longestWordLength = 0;
+    $longestWord = '';
+
+    foreach($splitWords as $words) {
+        if(strlen($words) > $longestWordLength) {
+            $longestWordLength = strlen($words);
+            $longestWord =  $words;
+        }
+    }
+
+    print_r($longestWord);
 }
-$arrayOfWords = "what is the longest word in this sentence?";
-print_r(array_map('countValues', $arrayOfWords));
+$sentence = "What is the longest word in this sentence?";
+longestWord($sentence);
+
+echo "<br>";
+
+function averageSentenceLen($longSentence){
+    $eachSentence = explode(".", $longSentence);
+    function countLen($value){
+        return strlen($value);
+    }
+    var_dump($eachSentence);
+    $numOfEachSentence = array_map( 'countLen', $eachSentence);
+    $average = (array_sum($numOfEachSentence) + count($numOfEachSentence)) / count($numOfEachSentence);
+    echo "<br>";
+    print_r($average);
+}
+$longSentence = "This is random Sentence. Every sentence is different. They all have different length. What would be the average sentence length here?";
+averageSentenceLen($longSentence);

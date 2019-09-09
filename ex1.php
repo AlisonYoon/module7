@@ -57,7 +57,6 @@ function longestWord($sentence){
             $longestWord =  $words;
         }
     }
-
     print_r($longestWord);
 }
 $sentence = "What is the longest word in this sentence?";
@@ -70,10 +69,8 @@ function averageSentenceLen($longSentence){
     function countLen($value){
         return strlen($value);
     }
-    var_dump($eachSentence);
     $numOfEachSentence = array_map( 'countLen', $eachSentence);
     $average = (array_sum($numOfEachSentence) + count($numOfEachSentence)) / count($numOfEachSentence);
-    echo "<br>";
     print_r($average);
 }
 $longSentence = "This is random Sentence. Every sentence is different. They all have different length. What would be the average sentence length here?";

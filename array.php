@@ -120,6 +120,16 @@ function doThing($value, $key)
 $la = array_walk($arraywalk, 'doThing');
 //var_dump($la)    -> returns true.
 
+/*
+ * This foreach is same as above array_walk($arraywalk, 'doThing');
+ * BUT, with array_walk, you can actually change the value of the original array.
+ * with foreach, it just prints it out.
+ *
+foreach doThing($array as $key=>$value) {
+    echo $key . ' : ' . $value .  '<br>';
+}
+*/
+
 //array_map(callback, array1, [array2, ...])    -> returns an (brand new)array. It does something to values only if you're using associative array.
 $arraymap = [1,3,6,3];
 

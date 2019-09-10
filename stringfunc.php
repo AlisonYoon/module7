@@ -27,3 +27,50 @@ echo '<br/>';
 echo '8) ' . substr("abcdef", 4, -4);
 echo '<br/>';
 echo '9) ' . substr("abcdef", -3, -1);
+
+#   trim()
+//It trims white whitespace from beginning and end.  trim(string $string, character mask)
+
+#   ltrim()
+// starts from left ->
+
+#   rtrim()
+// starts from right <-
+
+#   str_shuffle()
+//for example, str_shuffle('music') ->  'cusim"
+
+#   explode(string $delimiter, string $string): array
+//splits the string, returns them as an array
+
+#   implode(string $glue, array $pieces): string
+//stick things in array, returns it as a string
+
+$pizza = "piece1 piece2 piece3 piece4 piece5 piece6";
+$pieces = explode(" ", $pizza);
+var_dump($pieces);
+
+echo '<br/><br/>';
+
+$array = array('lastname', 'email', 'phone');
+$comma_separated = implode(",", $array);
+
+echo $comma_separated;
+
+#   htmlentities()
+//It prints HTML elements as is.
+$str = "A 'quote' is <b>bold</b>";
+echo $str;
+echo '<br/>';
+// Outputs: A 'quote' is &lt;b&gt;bold&lt;/b&gt;
+echo htmlentities($str);
+
+#   htmlspecialchars()
+//Convert special characters to HTML entities
+
+#   html_entity_decode()
+//Convert HTML entities to their corresponding characters
+
+#   strpos(string $haystack, $needle[, int $offset = 0 ]): int
+//find where's $needle in $haystack string. If it doesn't find it, returns FALSE
+//if offset is set, search will start this number of characters counted from the beginning of the string.

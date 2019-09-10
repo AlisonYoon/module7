@@ -14,6 +14,8 @@ $message = 'world';
 $example();
 
 //Closures can also accent regular arguments
+//Closure : below anonymous function use ($message) and it's enclosed to $message var declared above.
+//Even if $message is redeclared below, it's still 'world' because this $example is enclosed to $message above.
 $example = function ($arg) use ($message) {
     var_dump($arg . ' ' . $message);
     echo '<br>';

@@ -1,6 +1,6 @@
 <?php
 
-#   list() is a language construct. not a function
+#   list() is a language construct. not a function. Assign variables as if they were an array
 //list($variable1, $variable2, ...) :array
 
 $info = ['coffee', 'brown', 'caffeine'];

@@ -74,3 +74,9 @@ echo htmlentities($str);
 #   strpos(string $haystack, $needle[, int $offset = 0 ]): int
 //find where's $needle in $haystack string. If it doesn't find it, returns FALSE
 //if offset is set, search will start this number of characters counted from the beginning of the string.
+echo '<br/>';
+$mystring = 'abcdeafg023';
+$findme = 'a';
+$position = strpos($mystring, $findme);
+echo '<br/>';
+var_dump($position);

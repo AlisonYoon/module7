@@ -2,6 +2,9 @@
 
 //constance : if you wanna keep using it multiple times, make constance.
 //ie. use it for DB connection.
+//you can specify the visibility of class constance. if it's not specified, default is "public".
+//class constance can be used without any object instantiated.
+
 
 class Vegetable {
     const BAR = 'jelly';

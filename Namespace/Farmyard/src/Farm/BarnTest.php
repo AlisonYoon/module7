@@ -25,7 +25,7 @@ class BarnTest extends TestCase
     {
         $mockCow = $this->createMock(Cow::class);  //Cow::class means you're passing in class that is Cow.
         $mockCow->method('speak')
-        ->willReturn('cluck');
+        ->willReturn('moo');
 
         $barn = new Barn($mockCow);
         $result = $barn->makeCowSpeak();

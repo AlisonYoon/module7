@@ -12,5 +12,4 @@ class CowTest extends TestCase
         $result = $cow->speak();
         $this->assertEquals($result, 'moo');
     }
-
 }

@@ -1,15 +1,17 @@
 <?php
 
 use Farmyard\Animal\Cow;
+use Farmyard\Butcher;
 
 require_once __DIR__. '/vendor/autoload.php';
 
-use Farmyard\Butcher;
-
 $daisy = new Cow();
-$daisy->speak();
+echo $daisy->speak();
+
+echo "<br>";
 
 $meat = new Butcher\Cow();
+$meat->meat();
 
 echo __NAMESPACE__;
 

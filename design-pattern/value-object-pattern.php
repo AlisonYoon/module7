@@ -5,7 +5,7 @@
 	-represent a specific scalar data type
 		(ie. specific scalar data type: email address.
 			"Is it a valid email address?")
-	-provide ralidation
+	-provide validation
 	-uses the __toString() magic method
 	-means you can type hint
 		(ie. I want to use an email address)

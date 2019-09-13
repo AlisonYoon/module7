@@ -1,10 +1,13 @@
 <?php
 
 
-namespace Farmyard\Barn;
+namespace Farmyard\Animal;
 
 
 class Cow
 {
-
+    public function speak()
+    {
+        return 'moo';
+    }
 }

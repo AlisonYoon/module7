@@ -62,7 +62,7 @@ class Sheep {
     public $favouriteFences = [8,3];
     public $lamb;
 
-    public function __clone()   //magic method __clone()
+    public function __clone()   //magic method __clone() - shallow clone
     {
         echo 'sheep has been cloned <br>';
     }
